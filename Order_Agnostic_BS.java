@@ -1,7 +1,7 @@
-public class Order_Agnostic_BS {
+public class Order_Agnostic_BS{
     public static void main(String [] args){
         int [] arr = {2,4,8,12,45,56,78,89,90,};
-        int target = 78;
+        int target = 7;
         int answer = binarySearch(arr,target);
         System.out.println("Index of target element is " + answer);
     }
@@ -11,7 +11,7 @@ public class Order_Agnostic_BS {
         int start = 0;
         int end = array.length - 1;
 
-         int mid = start/2 + end / 2;
+         int mid = (start + end) / 2;
          boolean isAsc = array[0] < array[array.length - 1] ;
 
        
