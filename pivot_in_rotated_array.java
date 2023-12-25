@@ -1,9 +1,9 @@
-public class search_in_rotated_array {
+public class pivot_in_rotated_array {
     public static void main(String[] args){
         int  [] arr = {4,5,6,7,8,1,2,3};
+        // int  [] arr = {2,3,9,9,9,9,2,2,2};  not working for array with dublicate values
         int pivot = pivot(arr);
-        
-      
+        System.out.println(pivot);
 
     }
 
@@ -26,6 +26,4 @@ public class search_in_rotated_array {
         }
         return -1; // returning -1 means array was sorted
     }
-
-   
 }
