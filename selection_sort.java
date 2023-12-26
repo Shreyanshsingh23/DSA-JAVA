@@ -16,7 +16,8 @@ static void selectionSort(int[] arr){
           // find the maximum number in the array and swap with the correct index
 
           int last = arr.length - i - 1;
-          int maxIndex = maxInd(arr,0,last);
+          int maxIndex = maxInd(arr,0,last);  // here ultimately we are runnning a loop n times but not written here directly
+          // hence time complexity is not very good for thi sorting algorithm 
         
            
          
