@@ -1,2 +1,5 @@
-   System.out.println(Arrays.toString(ans));
-             System.out.println(arr[ans[0]][ans[1]]);
+ for(int i = 0; i < arr.length-k+1;i++){
+            if(i==0){
+                
+            }
+        }

@@ -26,9 +26,9 @@ public class insertion_sorting_algorithm{
        }
     }
 
-    static void swap(int[] arr, int start, int second){
-        int temp = arr[start];
-         arr[start] = arr[second];
+    static void swap(int[] arr, int first, int second){
+        int temp = arr[first];
+         arr[first] = arr[second];
          arr[second] = temp;
     }
     
