@@ -1,11 +1,12 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class leetcode1481 {
     
   
         public static void main(String[] args) {
             
-            int[] arr = {3,5,5};
+            int[] arr = {3,5,5,5};
             int k = 1;
             
             if(arr.length == k){
@@ -19,7 +20,7 @@ public class leetcode1481 {
             int count = k;
             sort(arr);
             
-            ArrayList<Integer> list = new ArrayList<Integer>();
+            List<Integer> list = new ArrayList<Integer>();
             
           int i = 0;
             while(count>0){
@@ -41,7 +42,7 @@ public class leetcode1481 {
                 i++;
                 
          }
-            int unique = 0;
+            int unique = 1;
             
             for(int j = 0; j < arr.length -1; j++){
                 if(arr[j] == arr[j+1]){
@@ -51,7 +52,8 @@ public class leetcode1481 {
             }
             
             //return (unique - k);
-            System.out.println(unique - k);
+            System.out.println("unique -> " + unique);
+            System.out.println(unique - k + "....");
             
         }
         
