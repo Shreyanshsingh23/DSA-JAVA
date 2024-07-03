@@ -9,7 +9,7 @@ public class quicksort {
 
     static void sort(int[] arr, int low, int high){
        // base condition
-        if(low<=high){
+        if(low>=high){
         return;
        }
        int s = low;
@@ -50,3 +50,4 @@ public class quicksort {
     }
 
 }
+// done
