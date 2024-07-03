@@ -1,6 +1,6 @@
 public class sieve_of_Eratosthenes {
     public static void main(String[] args) {
-        int n = 81;
+        int n = 40;
         boolean [] primes = new boolean[n+1]; 
         // n+1 because every index number is treated as value of n
         // and we need to include 40 also so we need array of 41 elements

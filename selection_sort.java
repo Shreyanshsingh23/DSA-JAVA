@@ -15,9 +15,9 @@ static void selectionSort(int[] arr){
         
           // find the maximum number in the array and swap with the correct index
 
-          int last = arr.length - i - 1;
+          int last = arr.length - 1 - i;
           int maxIndex = maxInd(arr,0,last);  // here ultimately we are runnning a loop n times but not written here directly
-          // hence time complexity is not very good for thi sorting algorithm 
+          // hence time complexity is not very good for this sorting algorithm 
         
            
          
@@ -29,10 +29,10 @@ static void selectionSort(int[] arr){
     }
 }
 
-static int maxInd(int [] arr, int start,int end){
+static int maxInd(int [] arr, int start,int last){
     int max = Integer.MIN_VALUE;
     int ans = 0;
-    for (int i = 0; i <= end; i++) {
+    for (int i = 0; i <= last; i++) {
         if(arr[i] > max){
             max = arr[i];
             ans = i;
@@ -42,3 +42,31 @@ static int maxInd(int [] arr, int start,int end){
     return ans;
 }
 }
+
+// OR
+// static void sort(int[] arr){
+        
+//     for(int i = 0; i <= arr.length-1; i++){
+//      // find the greatest element then swap it with correct index
+     
+//      int max = Integer.MIN_VALUE;
+//      int ans = i;
+//      for(int j = 0; j <= arr.length-1-i;j++){
+//        if(arr[j] > max){
+//          max = arr[j];
+//          ans = j;
+//        }
+         
+//      }
+//      swap(arr,ans,i);
+//     }
+//  }
+
+//  private static void swap(int[] arr, int ans, int i) {
+//     int temp = arr[ans];
+//     arr[ans] = arr[arr.length-1-i];
+//     arr[arr.length-1-i]= temp;
+
+//  }
+
+
